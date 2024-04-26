@@ -6,7 +6,7 @@
   <nav class="navbar navbar-expand-md bg-light fixed-top p-0 lg-shadow border-bottom shadow-sm">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="../assets/me2.png" alt="Bootstrap" width="50" height="50">
+      <img src="../assets/payment.png" alt="Bootstrap" width="50" height="50">
     </a>
     <button class="navbar-toggler" type="button" aria-label="toggler-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-          <img src="../assets/me2.png" alt="Bootstrap" width="50" height="50">
+          <img src="../assets/payment.png" alt="Bootstrap" width="50" height="50">
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>

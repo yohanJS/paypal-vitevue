@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
 import PayPalButtons from './components/PayPalButtons.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import PayPalButtons from './components/PayPalButtons.vue';
   </div>
   <NavBar></NavBar>
   <PayPalButtons></PayPalButtons>
+  <Footer></Footer>
 </template>
 
 <style scoped>
