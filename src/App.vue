@@ -6,7 +6,7 @@ import Footer from './components/Footer.vue';
 
 <template>
   <div class="bg-white">
-    <h3>PayPal SDK Integration</h3>
+    <h3>Checkout</h3>
   </div>
   <NavBar></NavBar>
   <PayPalButtons></PayPalButtons>
