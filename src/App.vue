@@ -1,4 +1,5 @@
 <script setup>
+import HelloWorld from './components/HelloWorld.vue';
 import NavBar from './components/NavBar.vue';
 import PayPalButtons from './components/PayPalButtons.vue';
 import Footer from './components/Footer.vue';
