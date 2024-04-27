@@ -17,7 +17,7 @@ data() {
 methods: {
 },
 mounted() {
-
+  var flag = true;
   window.paypal
     .Buttons({
       style: {
@@ -25,8 +25,10 @@ mounted() {
         layout: "vertical",
       },
       async createOrder() {
+        var endPoint = flag == false ? "https://localhost:7165/CreateOrder" : "https://www.bloggyapi.com/CreateOrder";
+
         try {
-          const response = await fetch("https://www.bloggyapi.com/CreateOrder", {
+          const response = await fetch(endPoint, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -61,7 +63,8 @@ mounted() {
       },
       async onApprove(data, actions) {
         try {
-          const response = await fetch(`https://www.bloggyapi.com/CapturePayment`, {
+          var endPoint = flag == false ? "https://localhost:7165/CapturePayment" : "https://www.bloggyapi.com/CapturePayment";
+          const response = await fetch(endPoint, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
