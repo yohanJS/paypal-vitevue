@@ -34,7 +34,7 @@ mounted() {
         layout: "vertical",
       },
       async createOrder() {
-        var endPoint = flag == false ? "https://localhost:7165/CreateOrder" : "https://www.bloggyapi.com/CreateOrder";
+        var endPoint = flag == true ? "https://localhost:7165/CreateOrder" : "https://www.bloggyapi.com/CreateOrder";
 
         try {
           const response = await fetch(endPoint, {
@@ -74,7 +74,7 @@ mounted() {
       },
       async onApprove(data, actions) {
         try {
-          var endPoint = flag == false ? "https://localhost:7165/CapturePayment" : "https://www.bloggyapi.com/CapturePayment";
+          var endPoint = flag == true ? "https://localhost:7165/CapturePayment" : "https://www.bloggyapi.com/CapturePayment";
           const response = await fetch(endPoint, {
             method: "POST",
             headers: {
